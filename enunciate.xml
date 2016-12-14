@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    This copy of Woodstox XML processor is licensed under the
+    Apache (Software) License, version 2.0 ("the License").
+    See the License for details about distribution rights, and the
+    specific rights regarding derivate works.
+
+    You may obtain a copy of the License at:
+
+    http://www.apache.org/licenses/
+
+    A copy is also included in the downloadable source code package
+    containing Woodstox, in file "ASL2.0", under the same directory
+    as this file.
+
+-->
+<enunciate slug="setlistfm" version="0.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://enunciate.webcohesion.com/schemas/enunciate-2.7.0.xsd">
+
+	<title>enunciate-example</title>
+
+	<api-classes>
+		<include pattern="at.molindo.enunciate.example.**" />
+	</api-classes>
+
+	<modules>
+		<jaxrs disabled="false" groupBy="path">
+			<application path="rest" />
+		</jaxrs>
+		<jaxb disabled="false" />
+		<jackson disabled="false" honorJaxb="true" />
+		<docs disabled="false" />
+	</modules>
+
+</enunciate>
